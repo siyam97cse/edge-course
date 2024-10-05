@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const paragraph = "On this special day, we honor our incredible teachers who dedicate their lives to shaping young minds and futures. Your guidance, patience, and passion for teaching inspire us to reach for our dreams. Thank you for your unwavering commitment and the countless ways you make a difference in our lives. Happy teachers Day!";
+
+        document.write(paragraph);
+        document.write("<br>");
+        document.write("<br>");
+
+ const word = 'teachers';
+ document.write(
+  `The searched word "${word}" ${
+    paragraph.includes(word) ? 'is' : 'is not'
+  } in the sentence`,
+);
+document.write("<br>");
+document.write("<br>");
+ 
+
+document.write(paragraph.replaceAll("teachers", 'faculties'))
+
+
+
+    </script>
+</body>
+</html>
