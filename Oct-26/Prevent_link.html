@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bk">
+    <a id="alt" href="http://www.google.com">Google</a>
+<p id="alert"></p>
+
+</body>
+<script>
+ let y = document.getElementById("bk");
+
+let x =  document.getElementById("alt");
+x.addEventListener("click",function(e){
+y.style.backgroundColor="Yellow";
+e.preventDefault();
+console.log(e);
+
+})   
+</script>
+</html>
