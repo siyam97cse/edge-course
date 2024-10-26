@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        Enter Nid:
+        <input type="text" id="nid">
+        <br>
+        Enter Mobile Number:
+        <input type="text" id="mobile">
+        <br>
+        Enter Date of Birth (MM-DD-YYYY):
+        <input type="text" id="date">
+        <br>
+        <button type="button" id="btn" onclick="validform()">Save</button>
+    </form>
+    <script>
+        function validform() {
+            let nid_num = document.getElementById("nid").value;
+            let mobile_num = document.getElementById("mobile").value;
+            let date_num = document.getElementById("date").value;
+
+            if (nid_num.length !== 13 || isNaN(nid_num)) {
+                alert("NID must be exactly 13 digits");
+                return false;
+            }
+            else{
+                alert("Form submitted successfully!");
+    
+            }
+
+            if (mobile_num.length !== 11 || isNaN(mobile_num) || !(mobile_num.charAt(2) === '3' || mobile_num.charAt(2) === '7')) {
+                alert("Mobile number must be 11 digits and GP Number");
+                return false;
+            }
+            else{
+                alert("Form submitted successfully!");
+            return true;
+            }
+
+            
+            if (date.charAt(0)='1','2' && date.charAt(1) ='1','2','3','4','5','6','7','8','9','0' %% date.charAt(2) ='1','2','3' date.charAt(3) ='1','2','3','4','5','6','7','8','9','0' date.charAt(4) ='1','2','3','4','5','6','7','8','9','0' date.charAt(5) ='1','2','3','4','5','6','7','8','9','0'  date.charAt(6) ='1','2','3','4','5','6','7','8','9','0' date.charAt(7) ='1','2','3','4','5','6','7','8','9','0'){
+                alert("Form submitted successfully!");
+                return true; 
+            }
+            else{
+                alert("Date of Birth must be in MMDDYYYY format");
+                return false;   
+            }
+
+            
+        }
+    </script>
+</body>
+</html>
