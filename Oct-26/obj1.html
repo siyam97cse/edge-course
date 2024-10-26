@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let jahid = {
+                name: "Jahid",
+                id: "221102",
+                phone: "01923",
+                admission: function(){
+                    let a = 5;
+                    let b = 6;
+                let sum = a+b;
+                    return sum;
+                },
+
+                student: function(){
+                let name=["Ahad","Abdul", "Sakib"];
+                return name;
+                }
+            }
+
+            let student1 = [
+                {
+                    id: "101",
+                    name: "Jahid"
+                },
+                {
+                    id: "102",
+                    name: "Tamim"
+                },
+                {
+                    id: "103",
+                    name: "Sakib"
+                }
+            ]
+            
+        
+        for (let i = 0; i < student1.length; i++) {
+    document.write("ID: " + student1[i].id + " Name: " + student1[i].name + "<br>");
+}
+        
+
+
+        // document.write(jahid.student()[0])
+        // document.write(jahid.id);
+        // document.write(jahid.admission());
+    </script>  
+</body>
+</html>
