@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    let w = "Dhaka";
+    let w_length = w.length;
+    let shuffle_word = "";
+
+    // Array to keep track of shuffled letters to prevent repeats
+    let used_indexes = [];
+
+    while (shuffle_word.length < w_length) {
+        let random_index = Math.floor(Math.random() * w_length);
+        
+        // Only add the character if this index hasn't been used
+        if (!used_indexes.includes(random_index)) {
+            shuffle_word += w[random_index];
+            used_indexes.push(random_index);
+        }
+    }
+
+    // Create a paragraph element and set its text to the shuffled word
+    let paragraph = document.createElement("p");
+    paragraph.innerText = shuffle_word;
+
+    // Append the paragraph to the body
+    let body = document.querySelector("body");
+    body.appendChild(paragraph);
+</script>
+</html>
