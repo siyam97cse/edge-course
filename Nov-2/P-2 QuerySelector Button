@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="r"></p>
+
+    <button id="btn">Press</button>
+</body>
+<script>
+let x = document.querySelector("#btn")
+        x.addEventListener("click",function(){
+            let y = document.querySelector(".r");
+               y.innerText = Math.random();
+        
+        });
+ 
+    
+    
+</script>
+</html>
