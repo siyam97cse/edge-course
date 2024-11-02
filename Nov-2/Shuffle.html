@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let w = "Dhaka";
+    let w_length = w.length;
+    let shuffle_word = "";
+
+    let solved_index = [];
+
+    for(i=0; i<w_length; i++){
+        let random_index = Math.floor(Math.random()*50);
+        shuffle_word = shuffle_word + w[random_index];
+    }
+    // if(shuffle_word.length == 5){
+        
+    // }
+
+    let paragraph = "";
+w.forEach(function(){
+    paragraph = shuffle_word;
+});
+
+let body = document.querySelector("body");
+body.innerHTML.paragraph;
+
+</script>
+</html>
