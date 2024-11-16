@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn">Jahid</button>
+    <button class="btn">Badhon</button>
+    <button class="btn">Avijit</button><br>
+    <button class="btn">Ahad</button>
+    <button class="btn">Salam</button>
+    <button class="btn">Sagor</button>
+
+</body>
+<script>
+   
+
+    b = document.querySelectorAll(".btn");
+    
+    b.forEach(function(x){
+      x.addEventListener("click",function(e){
+        alert(x.innerText);
+      })
+    });
+</script>
+</html>
